@@ -5,68 +5,408 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="style.css">
-    <title>Tasty</title>
+    <title>Daily Recipes</title>
 </head>
 <body>
 
-   
 
-    <div class="title"><h1>Daily<br>Recipes</h1></div>
-    <div class="container">
-        
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
-      
-          <!-- Wrapper for slides -->
-          <div class="carousel-inner">
-      
-            <div class="item active">
-              <img src="11.jpg" alt="ajvar" style="width:100%;">
-              <div class="carousel-caption">
-                <h1>Ajvar</h1>
-                <p>A condiment made principally from red bell peppers and oil.</p>
-              </div>
-            </div>
-      
-            <div class="item">
-              <img src="12.jpg" alt="Chicago" style="width:100%;">
-              <div class="carousel-caption">
-                <h1>Spätzle</h1>
-                <p>Consists of few ingredients, principally eggs, flour, and salt.</p>
-              </div>
-            </div>
-          
-            <div class="item">
-              <img src="13.jpg" alt="New York" style="width:100%;">
-              <div class="carousel-caption">
-                <h1>burritos</h1>
-                <p>A dish in Mexican and Tex-Mex cuisine consisting of a flour tortilla wrapped into a sealed cylindrical shape around various ingredients.</p>
-              </div>
-            </div>
-        
-          </div>
-      
-          <!-- Left and right controls -->
-          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-          </a>
+
+
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active"><strong>Tastery</strong></a>
+    <a href="#news">Recipes</a>
+    <a href="#contact">About us</a>
+    <a href="#about">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+ 
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+  <div class="fullscreen-bg">
+    <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+        <source src="cook3.mp4" type="video/mp4">
+    </video>
+  </div>
+
+
+<br><br><br><br><br>
+
+<div class="container">
+  <div class="row">
+   <div class="title"><h1>Tasty<br>Recipes</h1></div><br><br>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+   <div class="title"><h4>  <em> “If you are a chef, no matter how good a chef you are, it’s not good cooking for yourself; the joy is in cooking for others. It’s the same with music.”
+    <br><br>– will.i.am</em></h4></div><br><br>
+  </div>
+</div>
+
+
+
+<div class="container">
+<div class="row">
+<div class="col-sm">
+<h3>Macedonian dishes</h3>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm">
+      <div class="card" style="width: auto;">
+        <img src="ajvar.jpg" class="card-img-top" alt="...">
+         <div class="card-body">
+          <h5 class="card-title"><strong>Ajvar</strong></h5>
+          <p class="card-text">A condiment made principally from red bell peppers and oil.<br><br><em>Prep time: 2 hours</em></p>
+          <a href="#" class="btn btn-primary">How to make</a>
         </div>
       </div>
+
+    </div>
+    <div class="col-sm">
+      <div class="card" style="width: auto;">
+        <img src="grav.jpg" class="card-img-top" alt="...">
+         <div class="card-body">
+          <h5 class="card-title"><strong>Tavce Gravce</strong></h5>
+          <p class="card-text">Tavce Gravce is basically white kidney beans baked on a Tava (local skillet) mixed with other vegetables.<br><br><em>Prep time: 1 hour</em></p>
+          <a href="#" class="btn btn-primary">How to make</a>
+        </div>
+      </div>
+  </div>
+  <div class="col-sm">
+    <div class="card" style="width: auto;">
+      <img src="piper.jpg" class="card-img-top" alt="...">
+       <div class="card-body">
+        <h5 class="card-title"><strong>Stuffed peppers</strong></h5>
+        <p class="card-text">It consists of hollowed or halved peppers filled with any of a variety of fillings.<br><br><em>Prep time: 1 hour 30 minutes</em></p>
+        <a href="#" class="btn btn-primary">How to make</a>
+      </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="row">
+  <div class="col-sm">
+
+<h3>Mexican dishes</h3>
+</div></div>
+
+  <div class="row">
+    <div class="col-sm">
+      <div class="card" style="width: auto;">
+        <img src="burritos.jpg" class="card-img-top" alt="...">
+         <div class="card-body">
+          <h5 class="card-title"><strong>Burritos</strong></h5>
+          <p class="card-text">A flour tortilla wrapped into a sealed cylindrical shape around various ingredients.<br><br><em>Prep time: 45 minutes</em></p>
+          <a href="#" class="btn btn-primary">How to make</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-sm">
+      <div class="card" style="width: auto;">
+        <img src="tacos.jpg" class="card-img-top" alt="...">
+         <div class="card-body">
+          <h5 class="card-title"><strong>Tacos El Pastor</strong></h5>
+          <p class="card-text">Al pastor, also known as tacos al pastor, is a taco made with spit-grilled pork.<br><br><em>Prep time: 1 hour 20 minutes</em></p>
+          <a href="#" class="btn btn-primary">How to make</a>
+        </div>
+      </div>
+  </div>
+  <div class="col-sm">
+    <div class="card" style="width: auto;">
+      <img src="ench.jpg" class="card-img-top" alt="...">
+       <div class="card-body">
+        <h5 class="card-title"><strong>Enchiladas</strong></h5>
+        <p class="card-text">An enchilada is a corn tortilla rolled around a filling and covered with a savory sauce.<br><br><em>Prep time: 1 hour 15 minutes</em></p>
+        <a href="#" class="btn btn-primary">How to make</a>
+      </div>
+    </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-sm">
+  
+  <h3>German dishes</h3>
+  </div></div>
+  
+  
+    <div class="row">
+    <div class="col-sm">
+      <div class="card" style="width: auto;">
+        <img src="pork.jpg" class="card-img-top" alt="...">
+         <div class="card-body">
+          <h5 class="card-title"><strong>Pickled pork with sauerkraut</strong></h5>
+          <p class="card-text">A German Pork main course. Served with vegetables , spices and herbs.<br><br><em>Prep time: 2 hours 30 minutes</em></p>
+          <a href="#" class="btn btn-primary">How to make</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-sm">
+      <div class="card" style="width: auto;">
+        <img src="spetzle.jpg" class="card-img-top" alt="...">
+         <div class="card-body">
+          <h5 class="card-title"><strong>Spätzle</strong></h5>
+          <p class="card-text">A type of pasta made with fresh eggs and found in the cuisines of southern Germany and Austria.<br><br><em>Prep time: 1 hour 30 minutes</em></p>
+          <a href="#" class="btn btn-primary">How to make</a>
+        </div>
+      </div>
+  </div>
+  <div class="col-sm">
+    <div class="card" style="width: auto;">
+      <img src="wurst.jpg" class="card-img-top" alt="...">
+       <div class="card-body">
+        <h5 class="card-title"><strong>Curry sausage with French fries</strong></h5>
+        <p class="card-text">The curry sausage is typically served in a spices tomato paste or ketschup with curry powder.<br><br><em>Prep time: 20 minutes</em></p>
+        <a href="#" class="btn btn-primary">How to make</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  
+
+
+    
+
+</div>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+<br><br>
+
+<div class="container">
+  <div class="row">
+   <div class="title"><h1>Share<br>Your recipe</h1></div><br><br>
+  </div>
+</div>
+
+<br><br>
+
+
+
+
+<form action="mail.php" method="post">
+  <div class="card border-primary rounded-0">
+      <div class="card-header p-0">
+          <div class="bg-info text-white text-center py-2"><br><br>
+              <h3><i class="fa fa-envelope"></i>  Do you have cooking skills?</h3>
+              <p class="m-0">Please feel free to share your dishes with us, and get free promotion on our website !</p>
+          </div>
+      </div>
+      <div class="card-body p-3">
+
+          <!--Body-->
+          <div class="form-group">
+              <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="fa fa-user text-info"></i></div>
+                  </div>
+                  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Your_name" required>
+              </div>
+          </div>
+          <div class="form-group">
+              <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="fa fa-envelope text-info"></i></div>
+                  </div>
+                  <input type="email" class="form-control" id="nombre" name="email" placeholder="your_email@gmail.com" required>
+              </div>
+          </div>
+
+          <div class="form-group">
+              <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="fa fa-comment text-info"></i></div>
+                  </div>
+                  <textarea class="form-control" placeholder="your_recipe" required></textarea>
+              </div>
+          </div>
+
+          <div class="text-center">
+              <input type="submit" value="Submit" class="btn btn-info btn-block rounded-0 py-2">
+          </div>
+      </div>
+
+  </div>
+</form>
+<br><br>
+
+
+
+
+<div class="container">
+  <div class="row">
+   <div class="title"><h1>Satisfied<br>Customers</h1></div><br><br>
+  </div>
+</div>
+
+
+
+
+
+<div class="container my-5">
+  <section>
+  
+      <div class="row">
+          <div class="col-md-4">
+              <div class="bg-light position-relative px-3 mt-5 text-center py-5">
+                  <div class="my-2">
+                      <svg fill="#9b5de5" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                           width="30px" height="30px" viewBox="0 0 349.078 349.078" style="enable-background:new 0 0 349.078 349.078;"
+                           xml:space="preserve">
+<g>
+<path d="M198.779,322.441v-58.245c0-7.903,6.406-14.304,14.304-14.304c28.183,0,43.515-28.904,45.643-85.961h-45.643
+  c-7.897,0-14.304-6.41-14.304-14.304V26.64c0-7.9,6.406-14.301,14.304-14.301h121.69c7.896,0,14.305,6.408,14.305,14.301v122.988
+  c0,27.349-2.761,52.446-8.181,74.611c-5.568,22.722-14.115,42.587-25.398,59.049c-11.604,16.917-26.132,30.192-43.155,39.437
+  c-17.152,9.304-37.09,14.026-59.267,14.026C205.186,336.745,198.779,330.338,198.779,322.441z M14.301,249.887
+  C6.404,249.887,0,256.293,0,264.185v58.257c0,7.896,6.404,14.298,14.301,14.298c22.166,0,42.114-4.723,59.255-14.026
+  c17.032-9.244,31.558-22.508,43.161-39.437c11.29-16.462,19.836-36.328,25.404-59.061c5.423-22.165,8.178-47.263,8.178-74.6V26.628
+  c0-7.9-6.41-14.301-14.304-14.301H14.301C6.404,12.327,0,18.734,0,26.628v122.988c0,7.899,6.404,14.304,14.301,14.304h45.002
+  C57.201,220.982,42.09,249.887,14.301,249.887z"/>
+</g>
+                  </svg>
+                  </div>
+                  <div class="px-3 text-center pb-3">
+                      <p class="font-weight-light my-3 text-secondary">Wow these guys clearly know how to build a great website !</p>
+                  </div>
+              </div>
+              <div>
+                  <div class="font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto position-relative border border-white mt-4"
+                       style="width: 60px;height: 60px;">
+                      <img class="rounded-circle" src="chris.jpg" alt="" height="55px" width="55px">
+                  </div>
+                  <div class="text-center">
+                      <h5 class="font-weight-bold mt-4 mb-0" style="color: #ffffff">Basic Laser</h5>
+                     
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div style="background-color:  #512e52" class="position-relative px-3 mt-5 text-center py-5">
+                  <div class="my-2">
+                      <svg fill="#fff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                           width="30px" height="30px" viewBox="0 0 349.078 349.078" style="enable-background:new 0 0 349.078 349.078;"
+                           xml:space="preserve">
+<g>
+<path d="M198.779,322.441v-58.245c0-7.903,6.406-14.304,14.304-14.304c28.183,0,43.515-28.904,45.643-85.961h-45.643
+  c-7.897,0-14.304-6.41-14.304-14.304V26.64c0-7.9,6.406-14.301,14.304-14.301h121.69c7.896,0,14.305,6.408,14.305,14.301v122.988
+  c0,27.349-2.761,52.446-8.181,74.611c-5.568,22.722-14.115,42.587-25.398,59.049c-11.604,16.917-26.132,30.192-43.155,39.437
+  c-17.152,9.304-37.09,14.026-59.267,14.026C205.186,336.745,198.779,330.338,198.779,322.441z M14.301,249.887
+  C6.404,249.887,0,256.293,0,264.185v58.257c0,7.896,6.404,14.298,14.301,14.298c22.166,0,42.114-4.723,59.255-14.026
+  c17.032-9.244,31.558-22.508,43.161-39.437c11.29-16.462,19.836-36.328,25.404-59.061c5.423-22.165,8.178-47.263,8.178-74.6V26.628
+  c0-7.9-6.41-14.301-14.304-14.301H14.301C6.404,12.327,0,18.734,0,26.628v122.988c0,7.899,6.404,14.304,14.301,14.304h45.002
+  C57.201,220.982,42.09,249.887,14.301,249.887z"/>
+</g>
+                  </svg>
+                  </div>
+                  <div class="px-3 text-center pb-3">
+                      <p class="font-weight-light my-3 text-white">This has to be the worst food website i have ever seen. Piss off !</p>
+                  </div>
+              </div>
+              <div>
+                  <div  class="font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto position-relative border border-white mt-4"
+                       style="width: 60px;height: 60px">
+                      <img class="rounded-circle" src="gordon.jpg" alt="" height="55px" width="55px">
+                  </div>
+                  <div class="text-center">
+                      <h5 class="font-weight-bold mt-4 mb-0 " style="color: #ffffff">Gordon Ramsey</h5>
+                    
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="bg-light position-relative px-3 mt-5 text-center py-5">
+                  <div class="my-2">
+                      <svg fill="#9b5de5" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                           width="30px" height="30px" viewBox="0 0 349.078 349.078" style="enable-background:new 0 0 349.078 349.078;"
+                           xml:space="preserve">
+<g>
+<path d="M198.779,322.441v-58.245c0-7.903,6.406-14.304,14.304-14.304c28.183,0,43.515-28.904,45.643-85.961h-45.643
+  c-7.897,0-14.304-6.41-14.304-14.304V26.64c0-7.9,6.406-14.301,14.304-14.301h121.69c7.896,0,14.305,6.408,14.305,14.301v122.988
+  c0,27.349-2.761,52.446-8.181,74.611c-5.568,22.722-14.115,42.587-25.398,59.049c-11.604,16.917-26.132,30.192-43.155,39.437
+  c-17.152,9.304-37.09,14.026-59.267,14.026C205.186,336.745,198.779,330.338,198.779,322.441z M14.301,249.887
+  C6.404,249.887,0,256.293,0,264.185v58.257c0,7.896,6.404,14.298,14.301,14.298c22.166,0,42.114-4.723,59.255-14.026
+  c17.032-9.244,31.558-22.508,43.161-39.437c11.29-16.462,19.836-36.328,25.404-59.061c5.423-22.165,8.178-47.263,8.178-74.6V26.628
+  c0-7.9-6.41-14.301-14.304-14.301H14.301C6.404,12.327,0,18.734,0,26.628v122.988c0,7.899,6.404,14.304,14.301,14.304h45.002
+  C57.201,220.982,42.09,249.887,14.301,249.887z"/>
+</g>
+                  </svg>
+                  </div>
+                  <div class="px-3 text-center pb-3">
+                      <p class="font-weight-light my-3 text-secondary">I finally tried the German sausage. One was not enough though. Delicious!</p>
+                  </div>
+              </div>
+              <div>
+                  <div class="font-weight-bold circle text-white rounded-circle d-flex align-items-center justify-content-center mx-auto position-relative border border-white mt-4"
+                       style="width: 60px;height: 60px">
+                      <img class="rounded-circle" src="lima.jpg" alt="" height="55px" width="55px">
+                  </div>
+                  <div class="text-center">
+                      <h5 class="font-weight-bold mt-4 mb-0 " style="color: #ffffff">Adriana lima</h5>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+</div>
+
 
 
 
