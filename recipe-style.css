@@ -1,0 +1,57 @@
+/* MEDIA QUERIES FOR CAROUSEL IMAGES */
+
+/* Small mobile */
+.carousel-image-height {
+    height: 200px;
+}
+
+/* Mobile */
+@media only screen and (min-width: 480px) {
+    .carousel-image-height {
+        height: 300px;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 576px) {
+    .carousel-image-height {
+        height: 340px;
+    }
+}
+
+/* Tablet landscape */
+@media only screen and (min-width: 768px) {
+    .carousel-image-height {
+        height: 380px;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .carousel-image-height {
+        height: 460px;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+    .carousel-image-height {
+        height: 550px;
+    }
+}
+
+/* CAROUSEL CONTROL AND INDICATOR STYLING */
+.recipe-control-icon {
+    font-size: 2.5em;
+}
+
+.recipeCarouselIndicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+
+  /* Ingredients quantity column width */
+  .ingredientsTable td:nth-of-type(2) {
+    min-width: 80px;
+  }
