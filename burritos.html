@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="recipe-style.css">
+</head>
+
+
+<body>
+    <!-- Navigation bar -->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active"><strong>Tastery</strong></a>
+        <a href="#">Recipes</a>
+        <a href="about.html">About us</a>
+        <a href="about.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+     
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+    <!-- Main -->
+    <div class="container">
+        <!-- Title section -->
+        <div class="row pt-4">
+            <div class="col-12">
+                <h1 class="pt-4 mt-2">Bean and Rice Burritos</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-auto">
+                <i class="far fa-clock"></i>
+                <span class="pl-1">
+                    2 hrs
+                </span>
+            </div>
+            <div class="col-auto difficultyIndication">
+                <i class="fas fa-circle"></i>
+                <i class="far fa-circle"></i>
+                <i class="far fa-circle"></i>
+                <span class="pl-1">
+                    Easy
+                </span>
+            </div>
+        </div>
+
+        <!-- Carousel -->
+        <div class="row pt-4 pb-4">
+            <div class="col-12 col-md-10 col-lg-9">
+                <div id="recipeCarouselControls" class="carousel slide" data-ride="false" data-interval="false">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators recipeCarouselIndicators">
+                        <li data-target="#recipeCarouselControls" data-slide-to="0" class="active"></li>
+                        <li data-target="#recipeCarouselControls" data-slide-to="1"></li>
+                        <li data-target="#recipeCarouselControls" data-slide-to="2"></li>
+                      </ol>
+                    <!-- Slides-->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active overflow-hidden carousel-image-height">
+                            <img src="assets/burrito.jpg" class="d-block w-100 h-auto" alt="Burritos">
+                        </div>
+                        <div class="carousel-item overflow-hidden carousel-image-height">
+                            <img src="assets/burrito_spencer-davis-unsplash.jpg" class="d-block w-100 h-auto" alt="Burritos">
+                        </div>
+                        <div class="carousel-item overflow-hidden carousel-image-height">
+                            <img src="burritos.jpg" class="d-block w-100 h-auto" alt="Burritos">
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="carousel-control-prev" href="#recipeCarouselControls" role="button" data-slide="prev">
+                    <span aria-hidden="true">
+                        <i class="fas fa-chevron-circle-left recipe-control-icon"></i>
+                    </span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#recipeCarouselControls" role="button" data-slide="next">
+                    <span aria-hidden="true"> 
+                        <i class="fas fa-chevron-circle-right recipe-control-icon"></i>
+                    </span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ingredients table -->
+        <div class="row justify-content-between">
+            <div class="col-12 col-sm-10 col-md-9 col-lg-5 pr-4">
+                <h2 class="mb-1">Ingredients</h2>
+                    <div class="pl-0 mb-0">
+                        <p class="pb-0">
+                            for 4 to 6 servings
+                        </p>
+                    </div>
+                <table class="table table-striped table-borderless ingredientsTable">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="mx-auto">
+                                <input type="checkbox" aria-label="Checkbox for following ingredient">
+                            </div>
+                        </td>
+                        <td class="text-center">2 cups</td>
+                        <td>cooked rice</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">2 tbsp</td>
+                        <td>fresh cilantro (chopped)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">2</td>
+                        <td>limes (juiced)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">1/2</td>
+                        <td>onion (diced)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">3 to 4</td>
+                        <td>cloves garlic (minced)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">2 tbsp</td>
+                        <td>vegetable oil (or olive oil)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">1 can</td>
+                        <td>black beans (or pinto beans; drained)</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">1 tbsp</td>
+                        <td>chili powder</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">1/2 tsp</td>
+                        <td>cumin</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">1 tbsp</td>
+                        <td>hot sauce</td>
+                    </tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">2</td>
+                        <td>(10-inch) larg tortillas</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Preparation paragraphs -->
+            <div class="col-12 col-md-12 col-lg-7 preparationColumn">
+                <h2 class="pb-2">Preparation</h2>
+                <div class="row">
+                    <div class="col-1 ml-3 p-0 d-flex justify-content-center">
+                        <div class="background-circle">
+                            <h2 class="text-center">1</h2>
+                        </div>
+                    </div>
+                    <div class="col-10 pl-0">
+                        <p>In a large bowl, toss together cooked rice and fresh chopped cilantro, and drizzle with a bit of fresh lime juice. Heat in the microwave or on the stove just until hot, and give it a quick stir. </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 ml-3 p-0 d-flex justify-content-center">
+                        <div class="background-circle">
+                            <h2 class="text-center">2</h2>
+                        </div>
+                    </div>
+                    <div class="col-10 pl-0">
+                        <p>In a separate large skillet, sauté the garlic and onion in vegetable oil or olive oil for 2 to 3 minutes, or until the onion is soft.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 ml-3 p-0 d-flex justify-content-center">
+                        <div class="background-circle">
+                            <h2 class="text-center">3</h2>
+                        </div>
+                    </div>
+                    <div class="col-10 pl-0">
+                        <p>Reduce the heat to medium-low and add the black beans or pinto beans and season with the chili powder, cumin, and hot sauce, stirring to combine. You can add a bit of salt if you'd like, but you shouldn't need too much with all the other seasonings. Allow the beans to cook until heated through, about 5 minutes.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 ml-3 p-0 d-flex justify-content-center">
+                        <div class="background-circle">
+                            <h2 class="text-center">4</h2>
+                        </div>
+                    </div>
+                    <div class="col-10 pl-0">
+                        <p>Spoon the cilantro-lime rice and the black bean mix onto lightly warmed flour tortillas, and add any additional toppings you want.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 ml-3 p-0 d-flex justify-content-center">
+                        <div class="background-circle">
+                            <h2 class="text-center">5</h2>
+                        </div>
+                    </div>
+                    <div class="col-10 pl-0">
+                        <p>Wrap the burritos: Fold the short ends in, then fold one long side over the filling and gently push to ensure the fold is tight before rolling up the remainder of the burrito.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 ml-3 p-0 d-flex justify-content-center">
+                        <div class="background-circle">
+                            <h2 class="text-center">6</h2>
+                        </div>
+                    </div>
+                    <div class="col-10 pl-0">
+                        <p>Cut in half, and serve immediately.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small cyan darken-3">
+
+        <!-- Footer Elements -->
+        <div class="container">
+    
+            <!-- Grid row-->
+            <div class="row footerbackground">
+        
+                <!-- Grid column -->
+                <div class="col-md-12 py-5">
+                    <div class="mb-5 flex-center">
+            
+                        <!-- Facebook -->
+                        <a class="fb-ic">
+                            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Pinterest-->
+                        <a class="pin-ic">
+                            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+        
+            </div>
+            <!-- Grid row-->
+    
+        </div>
+        <!-- Footer Elements -->
+    
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3" style="color:#5a2653; font-size: 15px; ">    © 2020 Copyright: <a href="about.html" style="color:rgb(247, 183, 255); font-size: 15px; "> Tasty.com</a>
+        </div>
+        <!-- Copyright -->
+        <br><br>
+    </footer>
+</body>
+</html>

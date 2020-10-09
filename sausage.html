@@ -6,35 +6,61 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="recipe-style.css">
 </head>
+
+
 <body>
+    <!-- Navigation bar -->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active"><strong>Tastery</strong></a>
+        <a href="#">Recipes</a>
+        <a href="about.html">About us</a>
+        <a href="about.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+     
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+    <!-- Main -->
     <div class="container">
         <!-- Title section -->
-        <div class="row">
+        <div class="row pt-4">
             <div class="col-12">
-                <h1 class="pt-4">Tacos al Pastor</h1>
+                <h1 class="pt-4 mt-2">Curry sausage with French fries</h1>
             </div>
         </div>
-        <div class="row pt-2">
+        <div class="row">
             <div class="col-auto">
                 <i class="far fa-clock"></i>
                 <span class="pl-1">
-                    1 hr 15 mins
+                    20 mins
                 </span>
             </div>
-            <div class="col-auto">
-                <i class="fas fa-circle"></i>
+            <div class="col-auto difficultyIndication">
                 <i class="fas fa-circle"></i>
                 <i class="far fa-circle"></i>
+                <i class="far fa-circle"></i>
                 <span class="pl-1">
-                    Medium
+                    Easy
                 </span>
             </div>
         </div>
 
         <!-- Carousel -->
-        <div class="row pt-4">
+        <div class="row pt-4 pb-4">
             <div class="col-12 col-md-10 col-lg-9">
                 <div id="recipeCarouselControls" class="carousel slide" data-ride="false" data-interval="false">
                     <!-- Indicators -->
@@ -45,10 +71,10 @@
                     <!-- Slides-->
                     <div class="carousel-inner">
                         <div class="carousel-item active overflow-hidden carousel-image-height">
-                            <img src="assets/tacos-al-pastor_1.jpg" class="d-block mw-100 h-auto" alt="Tacos al Pastor">
+                            <img src="wurst.jpg" class="d-block w-100 h-auto" alt="Spaetzle">
                         </div>
                         <div class="carousel-item overflow-hidden carousel-image-height">
-                            <img src="assets/tacos-al-pastor_2.jpg" class="d-block mw-100 h-auto" alt="Tacos al Pastor">
+                            <img src="assets/currywurst.jpg" class="d-block w-100 h-auto" alt="Spaetzle">
                         </div>
                     </div>
                     <!-- Controls -->
@@ -66,18 +92,15 @@
                     </a>
                 </div>
             </div>
-              <!--
-                <img src="assets/tacos-al-pastor_1.jpg" class="img-fluid pl-3 pt-4" alt="Tacos al Pastor">
-              -->
         </div>
 
         <!-- Ingredients table -->
         <div class="row justify-content-between">
             <div class="col-12 col-sm-10 col-md-9 col-lg-5 pr-4">
-                <h2 class="pt-4 mb-1">Ingredients</h2>
-                    <div class="pl-0">
-                        <p>
-                            for 8 servings
+                <h2 class="mb-1">Ingredients</h2>
+                    <div class="pl-0 mb-0">
+                        <p class="pb-0">
+                            for 2 servings
                         </p>
                     </div>
                 <table class="table table-striped table-borderless ingredientsTable">
@@ -89,136 +112,144 @@
                             </div>
                         </td>
                         <td class="text-center">1 tbsp</td>
-                        <td>canola oil</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" aria-label="Checkbox for following ingredient">
-                        </td>
-                        <td class="text-center">3</td>
-                        <td>garlic cloves</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" aria-label="Checkbox for following ingredient">
-                        </td>
-                        <td class="text-center">1 tsp</td>
-                        <td>ground cumin</td>
+                        <td>curry powder</td>
                     </tr>
                     <tr>
                         <td>
                             <input type="checkbox" aria-label="Checkbox for following ingredient">
                         </td>
                         <td class="text-center">1/2 tsp</td>
-                        <td>pepper</td>
+                        <td>cayenne pepper</td>
                     </tr>
                     <tr>
                         <td>
                             <input type="checkbox" aria-label="Checkbox for following ingredient">
                         </td>
-                        <td class="text-center">1/4 tsp</td>
-                        <td>ground cloves</td>
+                        <td class="text-center">2</td>
+                        <td>white or red sausages</td>
                     </tr>
                     <tr>
                         <td>
                             <input type="checkbox" aria-label="Checkbox for following ingredient">
                         </td>
-                        <td class="text-center">4</td>
-                        <td>guajillo chiles</td>
+                        <td class="text-center">1/4 slice</td>
+                        <td>red onion</td>
                     </tr>
                     <tr>
                         <td>
                             <input type="checkbox" aria-label="Checkbox for following ingredient">
                         </td>
-                        <td class="text-center">1/3 cup</td>
-                        <td>pineapple juice</td>
+                        <td class="text-center">3 cup</td>
+                        <td>frensh fries</td>
                     </tr>
                     <tr>
                         <td>
                             <input type="checkbox" aria-label="Checkbox for following ingredient">
                         </td>
-                        <td class="text-center">1/4 cup</td>
-                        <td>distilled white vinegar</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" aria-label="Checkbox for following ingredient">
-                        </td>
-                        <td class="text-center">2 tbsp</td>
-                        <td>achiote paste</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" aria-label="Checkbox for following ingredient">
-                        </td>
-                        <td class="text-center"></td>
-                        <td>sea salt</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" aria-label="Checkbox for following ingredient">
-                        </td>
-                        <td class="text-center">2 lb</td>
-                        <td>boneless pork shoulder</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="checkbox" aria-label="Checkbox for following ingredient">
-                        </td>
-                        <td class="text-center">1/2</td>
-                        <td>medium pineapple</td>
+                        <td class="text-center">10 ml</td>
+                        <td>oliv oil</td>
                     </tr>
                     <tr>
                         <td>
                             <input type="checkbox" aria-label="Checkbox for following ingredient">
                         </td>
                         <td class="text-center">1</td>
-                        <td>medium red onion</td>
+                        <td>glove of garlic</td>
                     </tr>
                     <tr>
                         <td>
                             <input type="checkbox" aria-label="Checkbox for following ingredient">
                         </td>
-                        <td class="text-center"></td>
-                        <td>warm corn tortillas, chopped cilantro and lime wedges, for serving</td>
+                        <td class="text-center">1 tbsp</td>
+                        <td>sugar</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">1/2 tsp</td>
+                        <td>black pepper</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">1/2 tsp</td>
+                        <td>smoked paprika</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">120g</td>
+                        <td>tomato ketchup</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">1/2</td>
+                        <td>salt</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">60 ml</td>
+                        <td>water</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">1/2 tsp</td>
+                        <td>meat soup powder</td>
                     </tr>
                     </tbody>
                 </table>
             </div>
 
             <!-- Preparation paragraphs -->
-            <div class="col-12 col-md-12 col-lg-7">
-                <h2 class="pt-4 pb-2">Preparation</h2>
+            <div class="col-12 col-md-12 col-lg-7 preparationColumn">
+                <h2 class="pb-2">Preparation</h2>
                 <div class="row">
-                    <div class="col-1 ml-3 p-0">
-                        <h2 class="text-center">1</h2>
+                    <div class="col-1 ml-3 p-0 d-flex justify-content-center">
+                        <div class="background-circle">
+                            <h2 class="text-center">1</h2>
+                        </div>
                     </div>
                     <div class="col-10 pl-0">
-                        <p>Coloca los chiles en un ollita y cubre con agua. Hierve a fuego medio durante unos 15 minutos o hasta que esten suaves. Deja que se enfríen y finalmente retira el agua.</p>
+                        <p>Put all the ingredients in a small blender and blitz it up. Pour the paste into a stove and turn on a low heat. Let it bubble away for about 3-5 min. Then turn Off the heat and let it stay to keep it warm.</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-1 ml-3 p-0">
-                        <h2 class="text-center">2</h2>
+                    <div class="col-1 ml-3 p-0 d-flex justify-content-center">
+                        <div class="background-circle">
+                            <h2 class="text-center">2</h2>
+                        </div>
                     </div>
                     <div class="col-10 pl-0">
-                        <p>Coloca los chiles en un ollita y cubre con agua. Hierve a fuego medio durante unos 15 minutos o hasta que esten suaves. Deja que se enfríen y finalmente retira el agua.</p>
+                        <p>I used my Weber grill to fry the sausages until golden brown. Than slice them into 2cm thick pieces. You can use a pan and a littlebit of butter to do that. Put the slices onto the plate or others to set. You can also put then into the curry sauce.</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-1 ml-3 p-0">
-                        <h2 class="text-center">3</h2>
+                    <div class="col-1 ml-3 p-0 d-flex justify-content-center">
+                        <div class="background-circle">
+                            <h2 class="text-center">3</h2>
+                        </div>
                     </div>
                     <div class="col-10 pl-0">
-                        <p>Coloca los chiles en un ollita y cubre con agua. Hierve a fuego medio durante unos 15 minutos o hasta que esten suaves. Deja que se enfríen y finalmente retira el agua.</p>
+                        <p>Put the french fries into you preheated fat, oil or fryer until golden brown, crispy on the outside, soft on the inside. Than they are perfect. Put them out and let the access oil/fat drip of. Serve then on a plate or others. Add some of the curry sauce, ketchup, mayonaise or cream cheese sauce as topping.</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-1 ml-3 p-0">
-                        <h2 class="text-center">4</h2>
+                    <div class="col-1 ml-3 p-0 d-flex justify-content-center">
+                        <div class="background-circle">
+                            <h2 class="text-center">4</h2>
+                        </div>
                     </div>
                     <div class="col-10 pl-0">
-                        <p>Coloca los chiles en un ollita y cubre con agua. Hierve a fuego medio durante unos 15 minutos o hasta que esten suaves. Deja que se enfríen y finalmente retira el agua.</p>
+                        <p>Now put all the stuff on one plate, into two bowls or in those litte paper bowls where they are originally served in and enjoy!</p>
                     </div>
                 </div>
             </div>
@@ -226,5 +257,61 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small cyan darken-3">
+
+        <!-- Footer Elements -->
+        <div class="container">
+    
+            <!-- Grid row-->
+            <div class="row footerbackground">
+        
+                <!-- Grid column -->
+                <div class="col-md-12 py-5">
+                    <div class="mb-5 flex-center">
+            
+                        <!-- Facebook -->
+                        <a class="fb-ic">
+                            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Pinterest-->
+                        <a class="pin-ic">
+                            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+        
+            </div>
+            <!-- Grid row-->
+    
+        </div>
+        <!-- Footer Elements -->
+    
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3" style="color:#5a2653; font-size: 15px; ">    © 2020 Copyright: <a href="about.html" style="color:rgb(247, 183, 255); font-size: 15px; "> Tasty.com</a>
+        </div>
+        <!-- Copyright -->
+        <br><br>
+    </footer>
 </body>
 </html>
