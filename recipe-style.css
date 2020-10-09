@@ -1,0 +1,147 @@
+/* Text */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,600&display=swap');
+
+.container h1 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container p {
+    padding-bottom: 5%;
+}
+
+#myTopnav a {
+    font-family: "Bitter", serif;
+}
+
+.difficultyIndication i {
+    font-size: 0.8em;
+}
+
+.background-circle {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    border-radius: 20px;
+    background-color: rgba(90, 38, 83);
+}
+
+.background-circle h2 {
+    color: white;
+    font-size: 1.4em;
+}
+
+@media screen and (max-width: 767px) {
+    div.container h1 {
+      font-size: 4em;
+      padding-left: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      line-height: 1em;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    div.container h1 {
+        font-size: 3em;
+    }
+
+    .background-circle {
+        height: 24px;
+        width: 24px;
+        border-radius: 15px;
+    }
+
+    .background-circle h2 {
+        font-size: 1.2em;
+    }
+}
+
+
+/* Media queries for carousel images: */
+
+/* Small mobile */
+.carousel-image-height {
+    height: 200px;
+}
+
+/* Mobile */
+@media only screen and (min-width: 480px) {
+    .carousel-image-height {
+        height: 300px;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 576px) {
+    .carousel-image-height {
+        height: 340px;
+    }
+}
+
+/* Tablet landscape */
+@media only screen and (min-width: 768px) {
+    .carousel-image-height {
+        height: 380px;
+    }
+
+    .container h1 {
+        font-size: 6em;
+    }
+}
+
+/* Laptop */
+@media only screen and (min-width: 992px) {
+    .carousel-image-height {
+        height: 460px;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+    .carousel-image-height {
+        height: 550px;
+    }
+}
+
+
+/* Carousel control and indicators */
+.recipe-control-icon {
+    font-size: 2.5em;
+}
+
+.recipeCarouselIndicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+
+/* Ingredients quantity column width */
+.ingredientsTable td:nth-of-type(2) {
+    min-width: 5em;
+  }
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: rgba(124, 102, 158, 0.4);
+}
+
+
+/* Footer */
+a.pin-ic , a.tw-ic , a.fb-ic , a.gplus-ic , a.li-ic , a.ins-ic  {
+    color: #5a2653;
+}
+  
+a.pin-ic:hover , a.tw-ic:hover , a.fb-ic:hover , a.gplus-ic:hover , a.li-ic:hover , a.ins-ic :hover  {
+    color: rgb(247, 183, 255);
+}
+
+.mb-5 {
+    display:flex;
+    justify-content: center;
+}

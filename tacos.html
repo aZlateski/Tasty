@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="recipe-style.css">
+</head>
+
+
+<body>
+    <!-- Navigation bar -->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active"><strong>Tastery</strong></a>
+        <a href="#">Recipes</a>
+        <a href="about.html">About us</a>
+        <a href="about.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+     
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+    <!-- Main -->
+    <div class="container">
+        <!-- Title section -->
+        <div class="row pt-4">
+            <div class="col-12">
+                <h1 class="pt-4 mt-2">Tacos al Pastor</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-auto">
+                <i class="far fa-clock"></i>
+                <span class="pl-1">
+                    1 hr 20 mins
+                </span>
+            </div>
+            <div class="col-auto difficultyIndication">
+                <i class="fas fa-circle"></i>
+                <i class="fas fa-circle"></i>
+                <i class="far fa-circle"></i>
+                <span class="pl-1">
+                    Medium
+                </span>
+            </div>
+        </div>
+
+        <!-- Carousel -->
+        <div class="row pt-4 pb-4">
+            <div class="col-12 col-md-10 col-lg-9">
+                <div id="recipeCarouselControls" class="carousel slide" data-ride="false" data-interval="false">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators recipeCarouselIndicators">
+                        <li data-target="#recipeCarouselControls" data-slide-to="0" class="active"></li>
+                        <li data-target="#recipeCarouselControls" data-slide-to="1"></li>
+                      </ol>
+                    <!-- Slides-->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active overflow-hidden carousel-image-height">
+                            <img src="assets/tacos-al-pastor_1.jpg" class="d-block w-100 h-auto" alt="Tacos al Pastor">
+                        </div>
+                        <div class="carousel-item overflow-hidden carousel-image-height">
+                            <img src="assets/tacos-al-pastor_2.jpg" class="d-block w-100 h-auto" alt="Tacos al Pastor">
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="carousel-control-prev" href="#recipeCarouselControls" role="button" data-slide="prev">
+                    <span aria-hidden="true">
+                        <i class="fas fa-chevron-circle-left recipe-control-icon"></i>
+                    </span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#recipeCarouselControls" role="button" data-slide="next">
+                    <span aria-hidden="true"> 
+                        <i class="fas fa-chevron-circle-right recipe-control-icon"></i>
+                    </span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ingredients table -->
+        <div class="row justify-content-between">
+            <div class="col-12 col-sm-10 col-md-9 col-lg-5 pr-4">
+                <h2 class="mb-1">Ingredients</h2>
+                    <div class="pl-0 mb-0">
+                        <p class="pb-0">
+                            for 8 servings
+                        </p>
+                    </div>
+                <table class="table table-striped table-borderless ingredientsTable">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="mx-auto">
+                                <input type="checkbox" aria-label="Checkbox for following ingredient">
+                            </div>
+                        </td>
+                        <td class="text-center">1 tbsp</td>
+                        <td>canola oil</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">3</td>
+                        <td>garlic cloves</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">1 tsp</td>
+                        <td>ground cumin</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">1/2 tsp</td>
+                        <td>pepper</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">1/4 tsp</td>
+                        <td>ground cloves</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">4</td>
+                        <td>guajillo chiles</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">1/3 cup</td>
+                        <td>pineapple juice</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">1/4 cup</td>
+                        <td>distilled white vinegar</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">2 tbsp</td>
+                        <td>achiote paste</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center"></td>
+                        <td>sea salt</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">2 lb</td>
+                        <td>boneless pork shoulder</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">1/2</td>
+                        <td>medium pineapple</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center">1</td>
+                        <td>medium red onion</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" aria-label="Checkbox for following ingredient">
+                        </td>
+                        <td class="text-center"></td>
+                        <td>warm corn tortillas, chopped cilantro and lime wedges, for serving</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Preparation paragraphs -->
+            <div class="col-12 col-md-12 col-lg-7 preparationColumn">
+                <h2 class="pb-2">Preparation</h2>
+                <div class="row">
+                    <div class="col-1 ml-3 p-0 d-flex justify-content-center">
+                        <div class="background-circle">
+                            <h2 class="text-center">1</h2>
+                        </div>
+                    </div>
+                    <div class="col-10 pl-0">
+                        <p>In a medium saucepan, heat the 1 tablespoon of oil. Add the garlic and cook over moderately high heat, turning occasionally, until lightly browned, about 1 minute. Stir in the oregano, cumin, pepper and cloves and cook until fragrant, about 1 minute. Add the chiles and cook, stirring, until blistered in spots, about 30 seconds. Add the pineapple juice, vinegar and achiote paste and bring to a boil. Remove from the heat and let stand for 5 minutes.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 ml-3 p-0 d-flex justify-content-center">
+                        <div class="background-circle">
+                            <h2 class="text-center">2</h2>
+                        </div>
+                    </div>
+                    <div class="col-10 pl-0">
+                        <p>Transfer the chile mixture to a blender and puree until smooth. Season with salt. Scrape the marinade into a large, sturdy plastic bag. Add the pork and turn to coat. Set the bag in a small baking dish and refrigerate overnight.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 ml-3 p-0 d-flex justify-content-center">
+                        <div class="background-circle">
+                            <h2 class="text-center">3</h2>
+                        </div>
+                    </div>
+                    <div class="col-10 pl-0">
+                        <p>Light a grill or preheat a grill pan. Brush the pineapple and onion with oil. Grill over high heat, turning once, until lightly charred and softened, 3 to 5 minutes. Transfer to a carving board and tent with foil.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 ml-3 p-0 d-flex justify-content-center">
+                        <div class="background-circle">
+                            <h2 class="text-center">4</h2>
+                        </div>
+                    </div>
+                    <div class="col-10 pl-0">
+                        <p>Remove the pork from the marinade. Grill over high heat until lightly charred and just cooked through, 2 to 4 minutes. Transfer to the carving board and let rest for 5 minutes.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 ml-3 p-0 d-flex justify-content-center">
+                        <div class="background-circle">
+                            <h2 class="text-center">5</h2>
+                        </div>
+                    </div>
+                    <div class="col-10 pl-0">
+                        <p>Cut the pineapple, onion and pork into thin strips and transfer to a bowl. Season with salt. Serve with corn tortillas, chopped cilantro and lime wedges.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small cyan darken-3">
+
+        <!-- Footer Elements -->
+        <div class="container">
+    
+            <!-- Grid row-->
+            <div class="row footerbackground">
+        
+                <!-- Grid column -->
+                <div class="col-md-12 py-5">
+                    <div class="mb-5 flex-center">
+            
+                        <!-- Facebook -->
+                        <a class="fb-ic">
+                            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                        </a>
+                        <!--Pinterest-->
+                        <a class="pin-ic">
+                            <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Grid column -->
+        
+            </div>
+            <!-- Grid row-->
+    
+        </div>
+        <!-- Footer Elements -->
+    
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3" style="color:#5a2653; font-size: 15px; ">    © 2020 Copyright: <a href="about.html" style="color:rgb(247, 183, 255); font-size: 15px; "> Tasty.com</a>
+        </div>
+        <!-- Copyright -->
+        <br><br>
+    </footer>
+</body>
+</html>
